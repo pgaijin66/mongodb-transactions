@@ -6,28 +6,28 @@ mongodb-transactions
 
 1. Docker
 
-2. MongoDB
+2. MongoDB Atlas Account
 
 3. Go
 
 4. Gin
 
+## Requirement
+
+Please configure environment variable `MONGO_URL` before running the code.
+
+eg:
+
+```
+export MONGO_URL="MONGODB_CONNECTION_STRING_HERE"
+```
 
 ## Running project
 
-Run mongodb container:
-
-`docker-compose up -d`
+1. Install dependencies: `go mod tidy`
 
 
-Install dependencies:
-
-`go mod tidy`
-
-
-Running the server:
-
-`go run main.go`
+2. Running the server: `go run main.go`
 
 ## How it works
 
